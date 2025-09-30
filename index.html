@@ -1,138 +1,51 @@
 <!DOCTYPE html>
 <html lang="da">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
-    <title>Min Byggeprojekt Portefølje</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <title>Min Byggeprojekt Portefølje</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">
-                <h1>Cagri Ceylan - Bygningskonstruktør & Teknisk designer </h1>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#hjem">Hjem</a></li>
-                <li><a href="#projekter">Projekter</a></li>
-                <li><a href="#om">Om mig</a></li>
-                <li><a href="#kontakt">Kontakt</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="hjem" class="hero">
-            <div class="hero-content">
-                <h2>Velkommen til min portefølje</h2>
-                <p>Jeg specialiserer mig i kvalitetsbyggeri og renovering</p>
-                <a href="#projekter" class="cta-button">Se mine projekter</a>
-            </div>
-        </section>
-        <section id="projekter" class="projects">
-            <h2>Mine Byggeprojekter</h2>
-            
-            <div class="filter-buttons">
-                <button class="filter-btn active" data-filter="alle">Alle</button>
-                <button class="filter-btn" data-filter="nybyg">Nybyggeri</button>
-                <button class="filter-btn" data-filter="renovering">Renovering</button>
-                <button class="filter-btn" data-filter="erhverv">Erhverv</button>
-            </div>
-            <div class="gallery">
-                <!-- EKSEMPEL PROJEKT 1 - Kopier denne blok for nye projekter -->
-                <figure class="project-item" data-category="nybyg">
-                    <img src="images/projekt1.jpg" alt="Moderne enfamiliehus" loading="lazy">
-                    <figcaption>
-                        <h3>Moderne Enfamiliehus</h3>
-                        <p>180 m² nybyggeri med solarvarme og moderne design</p>
-                        <span class="project-year">2024</span>
-                    </figcaption>
-                </figure>
-                <!-- EKSEMPEL PROJEKT 2 -->
-                <figure class="project-item" data-category="renovering">
-                    <img src="images/projekt2.jpg" alt="Køkkenrenovering" loading="lazy">
-                    <figcaption>
-                        <h3>Total Køkkenrenovering</h3>
-                        <p>Komplet ombygning af 1970'er køkken til moderne standard</p>
-                        <span class="project-year">2024</span>
-                    </figcaption>
-                </figure>
-                <!-- EKSEMPEL PROJEKT 3 -->
-                <figure class="project-item" data-category="erhverv">
-                    <img src="images/projekt3.jpg" alt="Kontorbyggeri" loading="lazy">
-                    <figcaption>
-                        <h3>Kontorbyggeri</h3>
-                        <p>450 m² moderne kontorbyggeri med energiklasse A</p>
-                        <span class="project-year">2023</span>
-                    </figcaption>
-                </figure>
-                <!-- NYTILFØJET PROJEKT -->
-                <figure class="project-item" data-category="alle">
-                    <a href="projektdocs/projekt-eksempel.pdf" target="_blank">
-                        <img src="images/projekt-eksempel.jpg" alt="Projekt Eksempel" loading="lazy">
-                    </a>
-                    <figcaption>
-                        <h3>Projekt Eksempel</h3>
-                        <p>Projekt eksempel beskrivelse</p>
-                        <span class="project-year">2024</span>
-                        <a href="projektdocs/projekt-eksempel.pdf" target="_blank" class="pdf-link">Se PDF</a>
-                    </figcaption>
-                </figure>
-                <!-- TILFØJ FLERE PROJEKTER HER - Kopier en 'figure' blok og ændr indholdet -->
-            </div>
-        </section>
-        <section id="om" class="about">
-            <div class="about-content">
-                <h2>Om Mig</h2>
-                <div class="about-text">
-                    <p>Med over 15 års erfaring inden for byggeindustrien specialiserer jeg mig i kvalitetsbyggeri, der kombinerer traditionelt håndværk med moderne teknikker.</p>
-                    <p>Mine styrker ligger inden for:</p>
-                    <ul>
-                        <li>Nybyggeri af enfamiliehuse</li>
-                        <li>Renovering og modernisering</li>
-                        <li>Erhvervsbyggeri</li>
-                        <li>Energioptimering</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <section id="kontakt" class="contact">
-            <h2>Kontakt Mig</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <h3>Telefon</h3>
-                        <p>+45 12 34 56 78</p>
-                    </div>
-                    <div class="contact-item">
-                        <h3>Email</h3>
-                        <p>info@mitbyggefirma.dk</p>
-                    </div>
-                    <div class="contact-item">
-                        <h3>Adresse</h3>
-                        <p>Byggevej 123<br>1234 København</p>
-                    </div>
-                </div>
-                
-                <form class="contact-form">
-                    <input type="text" name="navn" placeholder="Dit navn" required>
-                    <input type="email" name="email" placeholder="Din email" required>
-                    <input type="tel" name="telefon" placeholder="Dit telefonnummer">
-                    <textarea name="besked" rows="5" placeholder="Beskriv dit projekt..." required></textarea>
-                    <button type="submit">Send Besked</button>
-                </form>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <p>© 2024 Mit Byggefirma. Alle rettigheder forbeholdes.</p>
-    </footer>
-    <!-- Lightbox for billeder -->
-    <div id="lightbox" class="lightbox">
-        <span class="close">×</span>
-        <img id="lightbox-img" class="lightbox-content">
-        <div class="lightbox-caption"></div>
+  <header>
+    <h1>Cagri Ceylan</h1>
+    <nav>
+      <a href="#projekter">Projekter</a>
+      <a href="#om">Om Mig</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+  </header>
+  <section class="hero">
+    <h2>Velkommen til min portefølje</h2>
+    <p>Bygningskonstruktør & LCA-specialist – Automatisering, bæredygtigt byggeri og digitale løsninger.</p>
+  </section>
+  <section id="projekter">
+    <h2>Udvalgte Projekter</h2>
+    <div class="projekt-card">
+      <h3>Projekt 1 Titel</h3>
+      <p>Kort beskrivelse af projekt 1. Resultater, ansvar og teknologier.</p>
     </div>
-    <script src="script.js"></script>
+    <div class="projekt-card">
+      <h3>Projekt 2 Titel</h3>
+      <p>Kort beskrivelse af projekt 2.</p>
+    </div>
+    <!-- Flere projekter copy-paste ovenstående blok -->
+  </section>
+  <section id="om">
+    <h2>Om Mig</h2>
+    <p>Bygningskonstruktør med fokus på miljø, digitalisering og automatisering. Erfaring fra Klimahuse, PURAS og LCA-værktøjer.</p>
+  </section>
+  <section id="kontakt">
+    <h2>Kontakt</h2>
+    <form>
+      <input type="text" placeholder="Navn" required>
+      <input type="email" placeholder="Email" required>
+      <textarea placeholder="Din besked" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+  <footer>
+    <p>&copy; 2025 Cagri Ceylan | Byggeportefølje</p>
+  </footer>
 </body>
 </html>
