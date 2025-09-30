@@ -1,51 +1,169 @@
 <!DOCTYPE html>
 <html lang="da">
 <head>
-  <meta charset="UTF-8">
-  <title>Min Byggeprojekt Portefølje</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cagri Ceylan - Byggeprojekter & Rådgivning</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>Cagri Ceylan</h1>
-    <nav>
-      <a href="#projekter">Projekter</a>
-      <a href="#om">Om Mig</a>
-      <a href="#kontakt">Kontakt</a>
-    </nav>
-  </header>
-  <section class="hero">
-    <h2>Velkommen til min portefølje</h2>
-    <p>Bygningskonstruktør & LCA-specialist – Automatisering, bæredygtigt byggeri og digitale løsninger.</p>
-  </section>
-  <section id="projekter">
-    <h2>Udvalgte Projekter</h2>
-    <div class="projekt-card">
-      <h3>Projekt 1 Titel</h3>
-      <p>Kort beskrivelse af projekt 1. Resultater, ansvar og teknologier.</p>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <h1>Cagri Ceylan</h1>
+                <ul class="nav-menu">
+                    <li><a href="#hjem">Hjem</a></li>
+                    <li><a href="#om-mig">Om mig</a></li>
+                    <li><a href="#projekter">Projekter</a></li>
+                    <li><a href="#referencer">Referencer</a></li>
+                    <li><a href="#kontakt">Kontakt</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="hjem" class="hero">
+        <div class="hero-content">
+            <h2>Byggeprojekter & Rådgivning</h2>
+            <p>Jeg hjælper private og virksomheder med at realisere byggeprojekter, hvor kvalitet, gennemsigtighed og godt samarbejde er i centrum. På denne side finder du et bredt udvalg af mine gennemførte byggeopgaver og projekter – fra små renoveringer til større nybyg og erhvervsløsninger.</p>
+            <a href="#projekter" class="cta-button">Se mine projekter</a>
+        </div>
+    </section>
+
+    <section id="om-mig" class="about">
+        <div class="container">
+            <h2>Om mig</h2>
+            <div class="about-content">
+                <p>Med solid erfaring fra byggebranchen tilbyder jeg rådgivning, projektstyring og udførelse fra idé til færdigt byggeri. Jeg lægger vægt på tydelig kommunikation og et trygt samarbejde, så du får et resultat, der matcher dine ønsker og behov.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projekter" class="projects">
+        <div class="container">
+            <h2>Mine projekter</h2>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="alle">Alle projekter</button>
+                <button class="filter-btn" data-filter="nybyg">Nybyg</button>
+                <button class="filter-btn" data-filter="renovering">Renovering</button>
+                <button class="filter-btn" data-filter="erhverv">Erhverv</button>
+            </div>
+            
+            <div class="projects-grid">
+                <!-- EKSEMPEL PROJEKTER - ERSTAT MED DINE EGNE -->
+                <figure class="project-item" data-category="nybyg">
+                    <img src="images/projekt1.jpg" alt="Nybyg enfamiliehus" class="project-image">
+                    <figcaption>
+                        <h3>Enfamiliehus Aalborg</h3>
+                        <p>Moderne nybyg med fokus på energioptimering og bæredygtige materialer.</p>
+                        <span class="project-year">2024</span>
+                    </figcaption>
+                </figure>
+
+                <figure class="project-item" data-category="renovering">
+                    <img src="images/projekt2.jpg" alt="Køkkenrenovering" class="project-image">
+                    <figcaption>
+                        <h3>Køkkenrenovering</h3>
+                        <p>Totalrenovering af køkken med åben løsning til stue.</p>
+                        <span class="project-year">2024</span>
+                    </figcaption>
+                </figure>
+
+                <figure class="project-item" data-category="erhverv">
+                    <img src="images/projekt3.jpg" alt="Kontorbyggeri" class="project-image">
+                    <figcaption>
+                        <h3>Kontorbyggeri</h3>
+                        <p>Moderne kontorfaciliteter med fokus på medarbejdernes trivsel.</p>
+                        <span class="project-year">2023</span>
+                    </figcaption>
+                </figure>
+
+                <figure class="project-item" data-category="renovering">
+                    <img src="images/projekt4.jpg" alt="Badeværelsesrenovering" class="project-image">
+                    <figcaption>
+                        <h3>Badeværelsesrenovering</h3>
+                        <p>Komplet renovering med flisearbejde og VVS-installation.</p>
+                        <span class="project-year">2023</span>
+                    </figcaption>
+                </figure>
+
+                <figure class="project-item" data-category="nybyg">
+                    <img src="images/projekt5.jpg" alt="Rækkehus" class="project-image">
+                    <figcaption>
+                        <h3>Rækkehus København</h3>
+                        <p>Energivenligt rækkehus med smart home-løsninger.</p>
+                        <span class="project-year">2022</span>
+                    </figcaption>
+                </figure>
+
+                <figure class="project-item" data-category="erhverv">
+                    <img src="images/projekt6.jpg" alt="Restaurant ombygning" class="project-image">
+                    <figcaption>
+                        <h3>Restaurant ombygning</h3>
+                        <p>Ombygning af lokaler til restaurant med professionelt køkken.</p>
+                        <span class="project-year">2022</span>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <section id="referencer" class="references">
+        <div class="container">
+            <h2>Referencer</h2>
+            <div class="references-grid">
+                <div class="reference-item">
+                    <p>"Cagri leverede et fantastisk resultat inden for budget og tid. Kommunikationen var klar og professionel gennem hele forløbet."</p>
+                    <cite>- Lars Nielsen, privatkunde</cite>
+                </div>
+                <div class="reference-item">
+                    <p>"Vi kan varmt anbefale Cagri til både små og store byggeprojekter. Hans opmærksomhed på detaljer og kvalitet er eksemplarisk."</p>
+                    <cite>- Maria Andersen, erhvervskunde</cite>
+                </div>
+                <div class="reference-item">
+                    <p>"Professionel håndtering af vores renoveringsprojekt. Cagri holdt tidsplanen og kommunikerede tydeligt gennem hele processen."</p>
+                    <cite>- Thomas Jensen, privatkunde</cite>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="kontakt" class="contact">
+        <div class="container">
+            <h2>Kontakt mig</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Få et uforpligtende tilbud</h3>
+                    <p>Er du klar til at drøfte et projekt, eller har du spørgsmål? Kontakt mig direkte:</p>
+                    <div class="contact-details">
+                        <p><strong>Telefon:</strong> +45 XX XX XX XX</p>
+                        <p><strong>Email:</strong> kontakt@cagriceylan.dk</p>
+                        <p><strong>Adresse:</strong> Din adresse her</p>
+                    </div>
+                </div>
+                <form class="contact-form" action="#" method="POST">
+                    <input type="text" name="name" placeholder="Dit navn" required>
+                    <input type="email" name="email" placeholder="Din email" required>
+                    <input type="tel" name="phone" placeholder="Dit telefonnummer">
+                    <textarea name="message" placeholder="Beskriv dit projekt..." rows="6" required></textarea>
+                    <button type="submit">Send besked</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Cagri Ceylan. Alle rettigheder forbeholdes.</p>
+        </div>
+    </footer>
+
+    <!-- Lightbox til billedvisning -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
     </div>
-    <div class="projekt-card">
-      <h3>Projekt 2 Titel</h3>
-      <p>Kort beskrivelse af projekt 2.</p>
-    </div>
-    <!-- Flere projekter copy-paste ovenstående blok -->
-  </section>
-  <section id="om">
-    <h2>Om Mig</h2>
-    <p>Bygningskonstruktør med fokus på miljø, digitalisering og automatisering. Erfaring fra Klimahuse, PURAS og LCA-værktøjer.</p>
-  </section>
-  <section id="kontakt">
-    <h2>Kontakt</h2>
-    <form>
-      <input type="text" placeholder="Navn" required>
-      <input type="email" placeholder="Email" required>
-      <textarea placeholder="Din besked" required></textarea>
-      <button type="submit">Send</button>
-    </form>
-  </section>
-  <footer>
-    <p>© 2025 Cagri Ceylan | Byggeportefølje</p>
-  </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
